@@ -18,6 +18,7 @@ import qin.com.coodinatorqin.appbar.AppBarLayoutActivity;
 import qin.com.coodinatorqin.bottomsheetbar.BottomSheetBaiduActivity;
 import qin.com.coodinatorqin.collapse.collapseLayoutActivity;
 import qin.com.coodinatorqin.collapsesnap.CollapseSnapActivity;
+import qin.com.coodinatorqin.collapsetest.CollapseTestActivity;
 import qin.com.coodinatorqin.floatbutton.FloatButtonActivity;
 import qin.com.coodinatorqin.main.Viewholder.DataBindingViewHolder;
 import qin.com.coodinatorqin.searchFancy.SearchFancyActivity;
@@ -35,7 +36,7 @@ public class MainAdapter extends RecyclerView.Adapter<DataBindingViewHolder> {
     private Class[] activities = new Class[]{AppBarLayoutActivity.class,collapseLayoutActivity.class
     ,MeasureCollpaseActivity.class,CollapseSnapActivity.class,FloatButtonActivity.class
     ,ZhiHuActivity.class,BottomSheetBaiduActivity.class,SearchFancyActivity.class
-    , TabLayoutActivity.class};
+    , TabLayoutActivity.class,CollapseTestActivity.class};
     private final LayoutInflater mLayoutInflater;
     private ViewDataBinding mViewDataBinding;
 

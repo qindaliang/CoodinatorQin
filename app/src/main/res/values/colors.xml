@@ -6,4 +6,5 @@
     <color name="start">#999</color>
     <color name="end">#fff</color>
     <color name="tra">#00000000</color>
+    <color name="white">#fff</color>
 </resources>
