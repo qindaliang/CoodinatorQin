@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/coordinator"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#ff0" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/nest"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_collapseMode="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="hello" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="hello" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="hello" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="hello" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="hello" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="hello" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="hello" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="hello" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="hello" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="hello" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/sheet_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击收起BottomSheet"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="100dp"
+        app:behavior_peekHeight="50dp"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:background="#0ff">
+        <TextView
+            android:id="@+id/sheet_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="这是一个BottomSheet"/>
+        <ImageView
+            android:id="@+id/bottom_sheet_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:minHeight="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        app:layout_behavior="qin.com.coodinatorqin.behavior.BottomViewBehavior" />
+
+</android.support.design.widget.CoordinatorLayout>
