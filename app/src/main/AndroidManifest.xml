@@ -28,6 +28,7 @@
         <activity android:name=".tablayout.SecondTablayoutActivity" />
         <activity android:name=".tablayout.ThirdTabLayoutActivity" />
         <activity android:name=".collapsetest.CollapseTestActivity"></activity>
+        <activity android:name=".bottomsheetdialog.BottomSheetDialogActivity" />
     </application>
 
 </manifest>
